@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -35,5 +36,11 @@ public class MainActivity extends AppCompatActivity {
         myHandler.sendEmptyMessage(0);
         Button dev2 = new Button(this);
         Log.d(TAG, "onCreate: ");
+        dev1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("This is dev1 btn onclick listener");
+            }
+        });
     }
 }
