@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         System.out.println("hello master");
-        Button dev1 = new Button(this);
+        Button dev2 = new Button(this);
         Log.d(TAG, "onCreate: ");
     }
 }
